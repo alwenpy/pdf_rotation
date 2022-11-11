@@ -4,30 +4,6 @@ from PyPDF2 import PdfFileReader,PdfFileWriter
 import os
 api=NinjaAPI()
 
-# class Inputfeild(Schema):
-#     page: int
-#     degree: int
-
-# @api.post("/upload")
-# def upload(request,details:Inputfeild = Form(...), file: UploadedFile = File(...)):
-#     target_file=file.name
-#     output_file=open('final.pdf','wb')
-#     pdf= PdfFileReader(target_file)
-#     writer=PdfFileWriter()
-#     page= pdf.getPage(details.page)
-#     page.rotateClockwise(details.degree) 
-#     writer.addPage(page)
-#     writer.write(output_file)
-#     output_file.close()
-#     # rotatepdf/pdf_rotation/rotatepdf/1.pdf
-# # mimetype
-
-#     return {'input':pdf}   
-
-
-
-
-
 class Inputfeild(Schema):
   page: int
   degree: int
